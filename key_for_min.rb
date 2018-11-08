@@ -5,4 +5,5 @@ def key_for_min_value(name_hash)
   ordered = name_hash.collect do |k, v|
     v 
   end
+  ordered
 end
