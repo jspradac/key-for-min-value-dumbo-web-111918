@@ -2,17 +2,21 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  values = []
-  keys = []
+  vals = []
+  keeys = []
   name_hash.each do |k, v|
-    values.push(v)
-    keys.push(k)
+    vals.push(v)
+    keeys.push(k)
   end
-  smallest_value = values[1]
-  values.each do |value|
+  smallest_value = vals[1]
+  vals.each do |value|
     if value < smallest_value
       smallest_value = value 
     end 
   end 
-  keys[values.find_index(smallest_value)]
+  if vals.length > 1 
+    keeys[vals.find_index(smallest_value)]
+  else
+    nil 
+  end
 end
