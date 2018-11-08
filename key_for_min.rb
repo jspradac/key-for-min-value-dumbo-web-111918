@@ -14,5 +14,5 @@ def key_for_min_value(name_hash)
       smallest_value = value 
     end 
   end 
-  keys[values[]]
+  keys[values.find_index(smallest_value)]
 end
