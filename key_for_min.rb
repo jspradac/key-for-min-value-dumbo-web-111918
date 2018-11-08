@@ -16,4 +16,5 @@ def key_for_min_value(name_hash)
   end 
   if values > 1 
     keys[values.find_index(smallest_value)]
+  end 
 end
